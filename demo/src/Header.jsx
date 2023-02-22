@@ -1,30 +1,44 @@
 import React from "react";
 import { Paper, Stack, Box, Typography, Chip, List, ListItem } from '@mui/material'
-import img from './images/img.jpg'
+import img from './images/img.jpg'  
 import './Header.css'
 
 import { Facebook, Twitter, LinkedIn, Face } from '@mui/icons-material/';
 
-// https://preview.colorlib.com/theme/finances/index.html#home-section
 
 const styles = {
     headerContainer: {
         backgroundImage: `url(${img})`,
         backgroundPosition: "center",
-        // backgroundColor : 'rgba(0,0,0,0)' ,
-        backgroundSize: 'cover', 
+        backgroundRepeat : 'no-repeat',
+        filter: 'blur(3px)',
+        backgroundSize: 'cover',
         height: "100vh",
     },
     customList: {
         padding: '12px 20px',
         fontSize: '20px',
         color: '#fff',
-        
+
     },
     customLogo: {
         fontSize: '30px',
         color: '#fff',
         height: "100%"
+    },
+    customHeader: {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+        borderBottom: 'solid grey 1px',
+        height: 70,
+
+        backgroundColor : 'rgb(0,0,0)' ,
+        backgroundColor : "rgba(0,0,0,0.2)", 
+        position : 'fixed',
+        width : '100%'
+
     }
 }
 
@@ -32,9 +46,11 @@ const styles = {
 export default function Header() {
     const list = ['Home', 'About', "Blog", 'Contact']
     return (
-        <Stack sx={styles.headerContainer}>
+        <Stack>
+            <Box sx={styles.headerContainer}></Box>
 
-            <Box sx={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center', borderBottom: 'solid grey 1px', height: 70 }}>
+
+            <Box sx={styles.customHeader}>
                 <Typography sx={styles.customLogo}> Finances <Typography component='span' sx={{ fontSize: 40, color: 'blue' }}>.</Typography></Typography>
 
                 <Stack direction='row'>
@@ -55,6 +71,7 @@ export default function Header() {
                 </Stack>
 
             </Box>
+                  
         </Stack>
     )
 }
