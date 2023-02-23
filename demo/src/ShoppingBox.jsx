@@ -22,9 +22,9 @@ const styles = {
     typographStyle: {
         fontSize: '18px',
         fontFamily: "Roboto",
-        color: "#808080", 
-        display : 'flex' ,
-        alignItems : 'center'
+        color: "#808080",
+        display: 'flex',
+        alignItems: 'center'
     }
 }
 
@@ -37,14 +37,14 @@ export default function ShoppinBox() {
                 <img style={{ width: '540px', height: '360px' }} src={money} />
             </Box>
 
-            <Box sx={styles.boxStyle} data-aos="fade-up" data-aos-duration='800'>
+            <Box sx={styles.boxStyle}>
                 <Typography variant="h3" sx={{ fontSize: '28px', fontFamily: "Arial", color: '#000000' }}>Banking Solutions Is Our Priority</Typography>
                 <Typography variant="paragraph" sx={styles.typographStyle}>A small river named Duden flows by their place and supplies it with the necessary regelialia.</Typography>
 
-                <Box sx={{display : 'flex' , flexDirection : 'column' ,alignItems : 'center' , gap : 1}}>
-                    <Typography variant="paragraph" sx={styles.typographStyle}><Done sx={{width :40 , color : 'blue'}}/> Officia quaerat eaque neque</Typography>
-                    <Typography variant="paragraph" sx={styles.typographStyle}><Done sx={{width :40 , color : 'blue'}}/> Lorem ipsum dolor sit amet</Typography>
-                    <Typography variant="paragraph" sx={styles.typographStyle}><Done sx={{width :40 , color : 'blue'}}/> Consectetur adipisicing elit</Typography>
+                <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 1 }}>
+                    <Typography variant="paragraph" sx={styles.typographStyle}><Done sx={{ width: 40, color: 'blue' }} /> Officia quaerat eaque neque</Typography>
+                    <Typography variant="paragraph" sx={styles.typographStyle}><Done sx={{ width: 40, color: 'blue' }} /> Lorem ipsum dolor sit amet</Typography>
+                    <Typography variant="paragraph" sx={styles.typographStyle}><Done sx={{ width: 40, color: 'blue' }} /> Consectetur adipisicing elit</Typography>
                 </Box>
             </Box>
         </Stack>

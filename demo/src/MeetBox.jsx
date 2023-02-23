@@ -32,7 +32,7 @@ export default function MeetBox() {
         <Stack direction='row' spacing={3} py={10} >
             {data.map( (item , index) => (
                 <Box key={index} data-aos="fade-up" data-aos-duration={item.duration}>
-                    <img style={{ width: '270px', height: '200px' }} src={item.img} />
+                    <img style={{ width: '320px', height: '220px' }} src={item.img} />
                     <Box sx={{paddingLeft : 2}}>
                         <Typography variant="h6">{item.name}</Typography>
                         <Typography variant="subtitle2" color="#808080">{item.department}</Typography>
