@@ -1,6 +1,6 @@
 import React from "react";
 import { Stack, Box, Typography } from "@mui/material";
-import { Done, FormatAlignJustifyOutlined } from '@mui/icons-material/';
+import { Done } from '@mui/icons-material/';
 import money from './images/money.jpg'
 import AOS from 'aos'
 import 'aos/dist/aos.css';

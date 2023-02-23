@@ -9,6 +9,7 @@ import Services from './Services'
 import Gallery from './Gallery'
 import OurWork from './OurWork'
 import Customers from './Customers'
+import Pricing from './Pricing/Pricing'
 
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
       <OurWork/>
       <Services/>
       <Customers/>
+      <Pricing/>
     </>
   )
 }
