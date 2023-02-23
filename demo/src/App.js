@@ -10,7 +10,8 @@ import Gallery from './Gallery'
 import OurWork from './OurWork'
 import Customers from './Customers'
 import Pricing from './Pricing/Pricing'
-
+import Bank from './Bank'
+import Contact from './Contact'
 
 export default function App() {
  
@@ -26,6 +27,8 @@ export default function App() {
       <Services/>
       <Customers/>
       <Pricing/>
+      <Bank/>
+      <Contact/>
     </>
   )
 }
