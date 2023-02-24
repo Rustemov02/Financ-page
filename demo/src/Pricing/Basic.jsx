@@ -28,7 +28,7 @@ export default function Premium() {
         }
     }
     return (
-        <Stack>
+        <Stack data-aos="fade-up" data-aos-duration="2000">
             <Paper sx={styles.customPaper} elevation={3} >
                 <Stack>
                     <Typography align="center" variant="h4">Basic</Typography>

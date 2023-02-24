@@ -14,10 +14,10 @@ export default function OurWork() {
             alignItems: 'center',
             gap: 2
         }
-    }
+    }   
 
     return (
-        <Stack alignItems="center" spacing={5} padding={7}>
+        <Stack data-aos="fade-up" alignItems="center" spacing={5} padding={7}>
             {/* HEADER */}
             <Box sx={styles.boxStyle} >
                 <Typography variant='h2' sx={{ fontSize: '40px', fontWeight: 600, color: '#007BFF' }}>How It Works</Typography>

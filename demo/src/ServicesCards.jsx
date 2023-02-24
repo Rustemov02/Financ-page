@@ -56,7 +56,7 @@ export default function ServicesCard() {
     return (
         <Stack marginTop={7} direction="row" flexWrap='wrap' justifyContent='center'>
             {data.map((item, index) => (
-                <Card key={index} sx={styles.customCard}>
+                <Card key={index} sx={styles.customCard} data-aos="fade-up">
                     <img src={item.img} style={{ height: 100, width: 80, marginLeft: 18 }} />
 
                     <CardContent  >

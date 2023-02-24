@@ -9,7 +9,7 @@ import CustomersSlide from './CustomerSlide';
 export default function Customers() {
  
     return (
-        <Stack paddingY={17} alignItems='center'>
+        <Stack paddingY={17} alignItems='center' data-aos="fade-up">
             <Typography variant='h2' sx={{ fontSize: '40px', fontWeight: 600, color: '#007BFF' }}>Happy Customers</Typography>
 
             <CustomersSlide/>
