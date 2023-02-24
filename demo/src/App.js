@@ -12,6 +12,7 @@ import Customers from './Customers'
 import Pricing from './Pricing/Pricing'
 import Bank from './Bank'
 import Contact from './Contact'
+import Footer from './Footer'
 
 export default function App() {
  
@@ -29,6 +30,7 @@ export default function App() {
       <Pricing/>
       <Bank/>
       <Contact/>
+      <Footer/>
     </>
   )
 }
