@@ -1,5 +1,4 @@
-import React from 'react'
-import { Stack } from '@mui/system'
+import React from 'react' 
 
 import Header from './Header'
 import About from './About'
@@ -11,8 +10,10 @@ import OurWork from './OurWork'
 import Customers from './Customers'
 import Pricing from './Pricing/Pricing'
 import Bank from './Bank'
+import Blog from './Blog'
 import Contact from './Contact'
 import Footer from './Footer'
+import HeaderSlide from './HeaderSlide'
 
 export default function App() {
  
@@ -29,8 +30,9 @@ export default function App() {
       <Customers/>
       <Pricing/>
       <Bank/>
+      <Blog/>
       <Contact/>
-      <Footer/>
+      <Footer/> 
     </>
   )
 }

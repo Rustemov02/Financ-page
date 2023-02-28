@@ -25,7 +25,7 @@ export default function Bank() {
 
 
     return (
-        <Stack direction='row' spacing={10} py={7} alignItems="center" justifyContent='center'>
+        <Stack direction='row' spacing={10} py={7} alignItems="center" justifyContent='center' data-aos="fade-up">
             <Box>
                 <img style={{ width: '540px', height: '360px' }} src={bank} />
             </Box>

@@ -1,8 +1,5 @@
 import React from "react";
-import { Stack, Typography, Box } from "@mui/material";
-
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
+import { Stack, Typography, Box } from "@mui/material"; 
 
 
 
@@ -72,7 +69,7 @@ export default function Gallery() {
     ];
 
     return (
-        <Stack paddingTop={13}>
+        <Stack paddingTop={13} id="Gallery">
             <Typography align='center' variant='h2' data-aos="fade-up" sx={{ fontSize: '40px', fontWeight: 600, color: '#007BFF' }}>Gallery</Typography>
  
 

@@ -15,7 +15,7 @@ export default function Footer() {
                 <Box sx={{ padding: '12px 10px', width: '25%', display: 'flex', flexDirection: 'column', gap: 1 }}>
                     <Typography paddingBottom='10px' variant="body1">Quick Links</Typography>
                     {['Terms', 'Policy', 'Abous Us', 'Services', 'Testimonials', 'Contact Us'].map((item, index) => (
-                        <Typography variant='subtitle1' sx={{ textDecoration: 'underline', color: '#808080' }}>{item}</Typography>
+                        <Typography key={index} variant='subtitle1' sx={{ textDecoration: 'underline', color: '#808080' }}>{item}</Typography>
                     ))}
                 </Box>
 
