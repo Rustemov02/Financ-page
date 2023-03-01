@@ -3,7 +3,6 @@ import { Paper, Stack, Button, Box, Typography, Chip, List, ListItem } from '@mu
 import './Header.css'
 
 import { Facebook, Twitter, LinkedIn, Face } from '@mui/icons-material/';
-// import HeaderSlide from './HeaderSlide'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay, Pagination } from "swiper";
@@ -13,11 +12,7 @@ import money from './images/money.jpg'
 import solving from './images/solving.jpg'
 import solving2 from './images/solving_2.jpg'
 import solving3 from './images/solving_3.jpg'
-
-
-
-
-
+ 
 export default function Header() {
 
     const [itemColor, setColor] = useState('#fff')
@@ -27,10 +22,10 @@ export default function Header() {
 
     const listenScrollEvent = (event) => {
         console.log(window.scrollY)
-        if (window.scrollY > 716) {
+        if (window.scrollY > 16) {
             setColor('black')
             setBackground('white')
-        } else if (window.scrollY < 716) {
+        } else if (window.scrollY < 16) {
             setColor('#fff')
             setBackground("rgba(0,0,0,0.2)")
         }
@@ -161,7 +156,8 @@ export default function Header() {
                     </List>
                 </Stack>
             </Box>
-
+            
+            {/* <Button onClick={()=>console.log('ko')}>Test</Button> */}
         </Stack>
     )
 }
